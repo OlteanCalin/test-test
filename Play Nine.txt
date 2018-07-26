@@ -14,7 +14,7 @@ var possibleCombinationSum = function(arr, n) {
     if (n === combinationSum) { return true; }
   }
   return false;
-};
+}
 
 const Stars = (props) => {
 	
@@ -167,7 +167,7 @@ class Game extends React.Component{
     return possbileCombinationSum(possibleNumbers, randomNumberOfStars);
   };
   updateDoneStatus = () => {
-  	this.setState(prevState) = {
+  	this.setState(prevState) => {
     	if(prevState.usedNumbers.length === 9){
       	return  { doneStatus: 'Done.Nice!'}; 
       }
